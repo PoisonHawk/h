@@ -6,12 +6,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="keywords" content="Косметика Рязань">
-        <title>Дрова62</title>
+        <title>Kosmetiks</title>
         <!-- <link rel="shortcut icon" href="/images/fav.ico" type="image/x-icon"> -->
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/fontawesome/font-awesome-4.6.3/css/font-awesome.min.css">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+        <script type="text/javascript">
+          ymaps.ready(init);
+          var myMap,
+              myPlacemark;
+
+          function init(){
+          var myMap = new ymaps.Map("map", {
+                  center: [54.62828507, 39.73420385],
+                  zoom: 16,
+                  scrollZoom: false,
+              });
+
+              myMap.behaviors.disable('scrollZoom');
+              myPlacemark = new ymaps.Placemark([54.62828507, 39.73420385], { hintContent: 'Kosmetiks', balloonContent: 'Kosmetiks' });
+
+              myMap.geoObjects.add(myPlacemark);
+
+          }
+        </script>
     </head>
     <body>
         <div class="main">
@@ -32,19 +54,29 @@
                             </ul>
                         </div>
                         <div class="info_2 col-md-2 col-sm-2 text-center">
-
                             <span class="tel">+7(4912) 51 20 69</span><br>
-
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h1>Заголовок сайта</h1>
+                            <h2>Описание сайта</h2>
+                        </div>
+                        <div class="col-md-7">
+                            <img src="/images/collagen.png" width="100%" class="img-responsive">
                         </div>
                     </div>
                 </div>
             </header>
-            <div class=" slide">
+            <div class=" slide" id="about">
                 <div class='layout'>
-
                         <div class="container">
                           <div class="row">
                             <div class="col-md-10 col-md-offset-1">
+                                <div class="header text-center">
+                                    <h2>О нас</h2>
+                                </div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                             </div>
                         </div>
                         </div>
@@ -53,40 +85,73 @@
             </div>
             <section>
                 <!--Наши услуги-->
-                <div class="services container">
+                <div class="container">
                     <div class="header text-center">
-                        <h2>Мы предоставляем</h2>
+                        <h2>Наши партнеры</h2>
                     </div>
-                    <div class="row">
-                        <div class='wood col-md-4 col-sm-4 text-center'>
-                            <h3>Дрова березовые колотые</h3>
-                            <img src="/images/drova_bereza.png" class='img-responsive center-block' alt="Березовые колотые дрова">
-                            <p><strong>Цена: 1500 р/м<sup><small>3</small></sup></strong> </p>
+                    <p>Мы работаем с лучшими поставщиками косметики</p>
+                    <div class='row '>
+                        <div class="col-md-4">
+                            <img src="images//partners/collagene.png" class="elem img-responsive center-block" height=60>
                         </div>
-                        <div class='wood col-md-4 col-sm-4 text-center'>
-                            <h3>Дрова дубовые колотые</h3>
-                            <img src="/images/drova_dub.png" class='img-responsive center-block' alt="Добовые колотые дрова">
-                            <p><strong>Цена: 2000 р/м<sup><small>3</small></sup></strong></p>
+                        <div class="col-md-4">
+                            <img src="images//partners/profcosm.png" class="img-responsive center-block" height=60 >
                         </div>
-                        <div class='wood col-md-4 col-sm-4 text-center'>
-                            <h3>Дрова ольховые колотые</h3>
-                            <img src="/images/drova_olha.png" class='img-responsive center-block' alt="Ольховые колотые дрова">
-                            <p><strong>Цена: 2000 р/м<sup><small>3</small></sup></strong></p>
+                        <div class="col-md-4">
+                            <img src="images//partners/tmprofi.png" class="img-responsive center-block" height=60>
                         </div>
-                        <div class='wood col-md-6 col-sm-6 text-center'>
-                            <h3>Доставка грузов</h3>
-                            <img src="/images/sheben1.png" class='img-responsive center-block' alt="Доставка грузов">
-                            <p>Доставка грунта, торфа, песка, щебня, строительных материалов</p>
+                    <div>
+                    <div class="row ">
+                        <div class="col-md-4">
+                            <img src="images//partners/depilflax.gif" class="img-responsive center-block" height=60>
                         </div>
-                        <div class='wood col-md-6 col-sm-6 text-center'>
-                            <h3>Аренда автотранспорта</h3>
-                            <img src="/images/samosval.png" class='img-responsive center-block' alt="Самосвал 5 тонн">
-                            <p>Самосвал</p>
-                            <p>Грузоподъемность: 5т</p>
-                            <p>Объем кузова: 6м<sup><small>3</small></sup></p>
+                        <div class="col-md-4">
+                            <img src="images//partners/refectocil.png" class="img-responsive center-block" height=60>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images//partners/starpil.png" class="img-responsive center-block">
                         </div>
                     </div>
-                </div>
+                    <!-- <div class="row"> -->
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                          </ol>
+
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                              <img src="/images/mainimg.png" alt="...">
+                              <div class="carousel-caption">
+                                <h3>Collagene 3D</h3>
+                                <p>Medical Collagene 3D – лидирующая марка на российском рынке профессиональной косметики, созданная для поддержания красоты и здоровья кожи.</p>
+                                <p>В настоящее время марка включает широкий ассортимент средств для проведения полноценных косметических процедур. В составе не только коллагеновые кремы, гель-маски, биопластины, но и препараты для очищения кожи, пилинги, альгинатные маски и средства дополнительного ухода, а также коллагеновый гидрогель Эмалан, применяющийся как в хирургии, так и в дерматологии. </p>
+                              </div>
+                            </div>
+                            <!-- <div class="item">
+                              <img src="/images/depilflax.jpg" alt="...">
+                              <div class="carousel-caption">
+                                ...
+                              </div>
+                            </div>
+                            ... -->
+                          </div>
+
+                          <!-- Controls -->
+                          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
+                    </div>
+                <!-- </div> -->
                 <!--как мы работаем-->
                 <div class="whyus">
                     <div class="container">
@@ -153,9 +218,14 @@
                 </div>
                 <!--Контакты-->
                 <div class="contacts">
+                    <div class="header text-center">
+                        <h2>Контакты</h2>
+                    </div>
+                    <div id="map" style="width: 100%; height: 500px"></div>
                     <div class='layout'>
                       <div class="container">
-                          <div class="row">
+
+                          <!-- <div class="row">
                               <div class="logo col-md-4 col-sm-4 text-center">
                                   <h2>Дрова62</h2>
                                   <h3>Доставка дров в Рязани</h3>
@@ -169,14 +239,19 @@
                                   <span class="tel">+7(4912) 51 20 69</span><br>
                                   <span class="tel">+7(920) 953 53 70</span>
                               </div>
-                          </div>
+                          </div> -->
                       </div>
                 </div>
                 </div>
             </section>
             <!--Подвал-->
             <footer>
-                <p class="text-center">Copyright &copy;2016 Дрова62 </p>
+                <div class='col-md-4 text-center'>
+                    Поставщик косметики
+                </div>
+                <div class="col-md-4">
+                    <p class="text-center">Copyright &copy;2016 Kosmetiks </p>
+                </div>
             </footer>
         </div>
     </body>
