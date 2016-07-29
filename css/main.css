@@ -173,12 +173,12 @@ footer{
 }
 
 .partners div{
-    display:table !important;
+    line-height: 100px !important;
 }
 
 .partners div img{
-    display:table-cell !important;
-    vertical-align: middle;
+    /*display:table-cell !important;*/
+    vertical-align: middle !important;
 }
 
 
