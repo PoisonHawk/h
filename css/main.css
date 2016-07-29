@@ -48,12 +48,7 @@ header{
     font-size: 26px;
 }
 
-.whyus .layout{
-    text-align:justify;
-    width:100%;
-    height:100%;
-    background: rgba(0,0,0,0.5);
-}
+
 
 .services{
     margin-top: 30px;
@@ -88,7 +83,7 @@ header{
 
 .item-depilflax{
   background: url('/images/depilflax.jpg') !important;
-  background-size: contain !important;
+  background-size: cover !important;
   background-color: #3E3E3E;
   height: 600px;
 }
@@ -118,12 +113,21 @@ header{
     background-attachment: fixed;
     background-color: #3E3E3E;
     color: #fff;
-    padding-bottom:100px;
+    padding-bottom:0;
     font-size: 30px;
+}
+
+.whyus .layout{
+    text-align:justify;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.5);
+    padding-bottom: 100px;
 }
 
 .whyus .logo{
     font-size: 46px;
+    margin-right: 20px;
 }
 
 .header h2{
@@ -135,6 +139,8 @@ header{
 
 .whyus .item{
     margin: 20px 0;
+    line-height: 4em;
+    font-size: 36px;
 }
 
 .process{
@@ -151,7 +157,7 @@ header{
 }
 
 .contacts{
-    color: rgba(255,255,255,0.9);
+    /*color: rgba(255,255,255,0.9);*/
     font-size: 40px;
 }
 
@@ -176,7 +182,7 @@ footer{
 }
 
 .carousel-caption {
-    background-color: rgba(24, 138, 93, 0.68) !important;
+    background-color: rgba(24, 138, 93, 0.9) !important;
     left: 60% !important;
     right: 10% !important;
     padding: 5px !important;
@@ -185,6 +191,8 @@ footer{
 }
 
 .carousel-caption p{
-    font-size: 16px !important;
+    font-size: 18px !important;
     text-align: none !important;
+    text-shadow: none !important;
+    /*color: #000;*/
 }
