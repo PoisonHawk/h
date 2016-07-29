@@ -1,6 +1,6 @@
 @font-face {
     font-family: PT; /* Имя шрифта */
-    src: url(/fonts/2219.ttf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/2219.ttf); /* Путь к файлу со шрифтом */
    }
 
 *{
