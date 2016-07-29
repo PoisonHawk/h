@@ -11,9 +11,9 @@
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/fontawesome/font-awesome-4.6.3/css/font-awesome.min.css">
         <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/bootstrap.min.css" >
         <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js" ></script>
         <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
         <script type="text/javascript">
           ymaps.ready(init);
@@ -48,9 +48,9 @@
                             <ul class="nav navbar-nav">
                                 <li><a href="/">Главная</a></li>
                                 <li><a href="#about">О нас</a></li>
-                                <li><a href="#about">Услуги</a></li>
-                                <li><a href="#about">Оплата и доставка</a></li>
-                                <li><a href="#about">Контакты</a></li>
+                                <li><a href="#services">Услуги</a></li>
+                                <li><a href="#delievery">Оплата и доставка</a></li>
+                                <li><a href="#contacts">Контакты</a></li>
                             </ul>
                         </div>
                         <div class="info_2 col-md-2 col-sm-2 text-center">
@@ -68,28 +68,25 @@
                     </div>
                 </div>
             </header>
-            <div class=" slide" id="about">
-                <div class='layout'>
-                        <div class="container">
-                          <div class="row">
-                            <div class="col-md-10 col-md-offset-1">
-                                <div class="header text-center">
-                                    <h2>О нас</h2>
-                                </div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <section class="slide" id="about">
+                  <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="header text-center">
+                                <h2>О нас</h2>
                             </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                         </div>
-                        </div>
-
-                </div>
-            </div>
-            <section>
+                    </div>
+                  </div>
+            </section>
+            <section id='services' class="services">
                 <!--Наши услуги-->
                 <div class="container">
                     <div class="header text-center">
                         <h2>Наши партнеры</h2>
+                        <h3 class="text-center">Мы работаем с лучшими поставщиками косметики</h3>
                     </div>
-                    <p>Мы работаем с лучшими поставщиками косметики</p>
                     <div class='row partners'>
                         <div class="col-md-4">
                             <img src="images//partners/collagene.png" class="elem img-responsive center-block" height=60>
@@ -123,23 +120,24 @@
 
                           <!-- Wrapper for slides -->
                           <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                              <img src="/images/mainimg.png" alt="...">
+                            <div class="item active item-collagene">
+                              <!-- <img src="/images/mainimg.png" alt="..."> -->
                               <div class="carousel-caption">
                                 <h3>Collagene 3D</h3>
                                 <p>Medical Collagene 3D – лидирующая марка на российском рынке профессиональной косметики, созданная для поддержания красоты и здоровья кожи.</p>
                                 <p>В настоящее время марка включает широкий ассортимент средств для проведения полноценных косметических процедур. В составе не только коллагеновые кремы, гель-маски, биопластины, но и препараты для очищения кожи, пилинги, альгинатные маски и средства дополнительного ухода, а также коллагеновый гидрогель Эмалан, применяющийся как в хирургии, так и в дерматологии. </p>
+                                <a href="collagene3d.com">Перейти на сайт</a>
                               </div>
                             </div>
-                            <div class="item">
-                              <img src="/images/depilflax.jpg" alt="...">
+                            <div class="item item-depilflax">
+                              <!-- <img src="/images/depilflax.jpg" alt="..."> -->
                               <div class="carousel-caption">
                                 <h3>Depilflax 100</h3>
                                 <p>Известная во всем мире Испанская компания MayStar производит несколько брендов восковой депиляции, но отдельное место во всей гамме продуктов занимает профессиональная линия восковой депиляции Depilflax 100. Весь свой 25-летний опыт, многолетние инновационные исследования, модернизированное производство компания вложила в развитие и совершенствование марки Depilflax 100. И сегодня Депилфлакс 100 это признанный во всем мире бренд высочайшего качества.</p>
                               </div>
                             </div>
-                            <div class="item">
-                              <img src="/images/refectocil.jpg" alt="...">
+                            <div class="item item-refectocil">
+                              <!-- <img src="/images/refectocil.jpg" alt="..."> -->
                               <div class="carousel-caption">
                                 <h3>Refecto Cil</h3>
                                 <p>Компания «Игро», работающая с лучшими брендами косметических средств, представляет своим клиентам одну из самых востребованных в мире марок – RefectoCil, выпускающей средства для профессионального окрашивания бровей и ресниц. Австрийский бренд RefectoCil успешно реализуется более чем в полусотне стран мира, а теперь продукция марки доступна и российским покупателям, желающим приобщиться к миллионам поклонников RefectoCil в Европе, Америке и Азии.</p>
@@ -159,47 +157,49 @@
                           </a>
                         </div>
                     </div>
-                <!-- </div> -->
+                </section>
                 <!--как мы работаем-->
-                <div class="whyus">
+                <section class="whyus">
+                  <div class="layout">
                     <div class="container">
-                    <div class="header text-center">
-                        <h2>Почему выбирают нас</h2>
-                    </div>
-                    <div class="row">
-                        <div class='col-md-5  col-md-offset-1 col-sm-10 col-sm-offset-2'>
-                            <div class='item'>
-                                <span class='logo'><i class="fa fa-user" aria-hidden="true"></i></span>
-                                <span>Индивидуальный подход</span>
-                            </div>
-                            <div class='item'>
-                                <span class='logo'><i class="fa fa-truck" aria-hidden="true"></i></span>
-                                <span>Оперативная доставка</span>
-                            </div>
-                            <div class='item'>
-                                <span class='logo'><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
-                                <span>Гарантия качества</span>
-                            </div>
-                        </div>
-                        <div class='col-md-5  col-md-offset-1 col-sm-10 col-sm-offset-2' >
-                            <div class='item'>
-                                <span class='logo'><i class="fa fa-rub" aria-hidden="true"></i></span>
-                                <span>Низкие цены</span>
-                            </div>
-                            <div class='item'>
-                                <span class='logo'><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>
-                                <span>Работаем без выходных</span>
-                            </div>
-                            <div class='item'>
-                                <span class='logo'><i class="fa fa-cube" aria-hidden="true"></i></span>
-                                <span>Бесплатная разгрузка</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
+                      <div class="header text-center">
+                          <h2>Почему выбирают нас</h2>
+                      </div>
+                      <div class="row">
+                          <div class='col-md-5  col-md-offset-1 col-sm-10 col-sm-offset-2'>
+                              <div class='item'>
+                                  <span class='logo'><i class="fa fa-user" aria-hidden="true"></i></span>
+                                  <span>Индивидуальный подход</span>
+                              </div>
+                              <div class='item'>
+                                  <span class='logo'><i class="fa fa-truck" aria-hidden="true"></i></span>
+                                  <span>Оперативная доставка</span>
+                              </div>
+                              <div class='item'>
+                                  <span class='logo'><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+                                  <span>Гарантия качества</span>
+                              </div>
+                          </div>
+                          <div class='col-md-5  col-md-offset-1 col-sm-10 col-sm-offset-2' >
+                              <div class='item'>
+                                  <span class='logo'><i class="fa fa-rub" aria-hidden="true"></i></span>
+                                  <span>Низкие цены</span>
+                              </div>
+                              <div class='item'>
+                                  <span class='logo'><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>
+                                  <span>Работаем без выходных</span>
+                              </div>
+                              <div class='item'>
+                                  <span class='logo'>7</span>
+                                  <span>лет на рынке косметики</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                </section>
                 <!--как мы работаем-->
-                <div class="process">
+                <section class="process">
                     <div class="container">
                         <div class="header text-center">
                             <h2>Как мы работаем</h2>
@@ -223,35 +223,15 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
                 <!--Контакты-->
-                <div class="contacts">
+                <section id="#contacts" class="contacts">
                     <div class="header text-center">
                         <h2>Контакты</h2>
                     </div>
                     <div id="map" style="width: 100%; height: 500px"></div>
-                    <div class='layout'>
-                      <div class="container">
+              </section>
 
-                          <!-- <div class="row">
-                              <div class="logo col-md-4 col-sm-4 text-center">
-                                  <h2>Дрова62</h2>
-                                  <h3>Доставка дров в Рязани</h3>
-                              </div>
-                              <div class=" col-md-4 col-sm-4 text-center">
-                                  <i class="fa fa-home" aria-hidden="true"></i>
-                                  Работаем ежедневно <br>с 9.00 до 20.00
-                              </div>
-                              <div class="col-md-4 col-sm-4 text-center">
-                                  Звоните и заказывайте!<br>
-                                  <span class="tel">+7(4912) 51 20 69</span><br>
-                                  <span class="tel">+7(920) 953 53 70</span>
-                              </div>
-                          </div> -->
-                      </div>
-                </div>
-                </div>
-            </section>
             <!--Подвал-->
             <footer>
                 <div class='col-md-4 text-center'>
