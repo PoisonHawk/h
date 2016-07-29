@@ -19,7 +19,7 @@ section{
 }
 
 header{
-  background: url('/images/back.jpg') !important;
+  background: url('../images/back.jpg') !important;
   background-size: cover !important;
   background-color: #3E3E3E;
   background-position: bottom !important;
@@ -106,21 +106,21 @@ header .logo{
 }
 
 .item-collagene{
-  background: url('/images/mainimg.png') !important;
+  background: url('../images/mainimg.png') !important;
   background-size: cover !important;
   background-color: #3E3E3E;
   height: 600px;
 }
 
 .item-depilflax{
-  background: url('/images/depilflax.jpg') !important;
+  background: url('../images/depilflax.jpg') !important;
   background-size: cover !important;
   background-color: #3E3E3E;
   height: 600px;
 }
 
 .item-refectocil{
-  background: url('/images/refectocil.jpg') !important;
+  background: url('../images/refectocil.jpg') !important;
   background-size: contain !important;
   background-color: #3E3E3E;
   height: 600px;
@@ -139,7 +139,7 @@ header .logo{
 }
 
 .whyus{
-    background: url('/images/bg2.jpg');
+    background: url('../images/bg2.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-color: #3E3E3E;
