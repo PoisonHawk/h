@@ -60,8 +60,8 @@
                         </div>
                     </div>
                         <div class="header-info">
-                            <h1 class='text-center'>Заголовок сайта</h1>
-                            <h2 class="text-center">Описание сайта</h2>
+                            <!-- <h1 class='text-center'>Заголовок сайта</h1> -->
+                            <h1 class="text-center">Оборудование и косметика для салонов красоты в Рязани</h1>
                         </div>
                 </div>
             </header>
@@ -72,7 +72,11 @@
                             <div class="header text-center">
                                 <h2>О нас</h2>
                             </div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <p class="text-justify">Наша организация уже на протяжении восьми лет занимает лидирующие позиции в городе Рязань и Рязанской области в сфере оснащения салонов красоты и парикмахерских. Компания «КоSметиК» предлагает оборудование и косметику, предназначенных для выполнения широкого круга задач в области косметологии, парикмахерского и маникюрного искусства в зависимости от потребностей и предпочтений своих клиентов.</p>
+                            <p class="text-justify"> Мы являемся официальными представителями таких брендов профессиональной косметики как <strong>Аnna Lotan</strong>, <strong>Cоllagene 3D</strong>, <strong>Christina</strong> , <strong>Depilflax</strong>, <strong>Starpil</strong>.
+В нашем выставочном зале, находящимся в центре города, Вы сможете посмотреть и протестировать всю продукцию.
+</p>
+  <h3 class="text-center" style="font-size: 36px; margin-top: 60px;">Наши клиенты становятся нашими друзьями!</h3>
                         </div>
                     </div>
                   </div>
@@ -164,6 +168,10 @@
                       </div>
                       <div class="row">
                           <div class='col-md-5  col-md-offset-1 col-sm-10 col-sm-offset-2'>
+                            <div class='item'>
+                                <span class='logo'>8</span>
+                                <span>лет на рынке косметики</span>
+                            </div>
                               <div class='item'>
                                   <span class='logo'><i class="fa fa-user" aria-hidden="true"></i></span>
                                   <span>Индивидуальный подход</span>
@@ -172,12 +180,13 @@
                                   <span class='logo'><i class="fa fa-truck" aria-hidden="true"></i></span>
                                   <span>Бесплатная доставка</span>
                               </div>
-                              <div class='item'>
-                                  <span class='logo'><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
-                                  <span>Гарантия качества</span>
-                              </div>
+
                           </div>
                           <div class='col-md-5  col-md-offset-1 col-sm-10 col-sm-offset-2' >
+                            <div class='item'>
+                                <span class='logo'><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+                                <span>Гарантия качества</span>
+                            </div>
                               <div class='item'>
                                   <span class='logo'><i class="fa fa-rub" aria-hidden="true"></i></span>
                                   <span>Гибкая ценовая политика</span>
@@ -186,10 +195,7 @@
                                   <span class='logo'><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>
                                   <span>Работаем без выходных</span>
                               </div>
-                              <div class='item'>
-                                  <span class='logo'>8</span>
-                                  <span>лет на рынке косметики</span>
-                              </div>
+
                           </div>
                       </div>
                   </div>
@@ -208,10 +214,35 @@
                 </section>
                 <!--Контакты-->
                 <section id="contacts" class="contacts">
+                  <div class="container">
                     <div class="header text-center">
                         <h2>Контакты</h2>
                     </div>
-                    <div id="map" style="width: 100%; height: 500px"></div>
+                    <div class="row">
+                      <div class="col-md-4 text-center">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>  Рязань, ул.Краснорядская, д. 23
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>  kosmetik_servis@list.ru
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <i class="fa fa-mobile" aria-hidden="true"></i>  +7 (4912) 25-40-09
+                      </div>
+                    </div>
+                    </div>
+                    <br>
+                    <!-- <br> -->
+                    <div id="map" class="map" style="width: 100%; height: 600px"><div class="send">
+                      <form method="POST">
+                        <h3  class="text-center">Напишите нам</h3>
+                        <input type="email" name="email" placeholder="E-mail" required>
+                        <br>
+                        <textarea name="message"  rows="5" placeholder="Текст сообщения" required></textarea>
+                        <br>
+                        <input type="submit" value="Отправить">
+                      </form>
+                    </div></div>
+
               </section>
 
             <!--Подвал-->

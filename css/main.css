@@ -12,6 +12,7 @@ body{
 
   font-size: 32px;
   font-family: 'PT' !important;
+  min-width: 1300px !important;
 }
 
 section{
@@ -30,7 +31,7 @@ header{
 }
 
 .header-info{
-  display:table-cell;
+  /*display:table-cell;*/
   vertical-align: middle;
   width:100% !important;
   text-align: center;
@@ -199,7 +200,7 @@ header .logo{
 .contacts{
     /*color: rgba(255,255,255,0.9);*/
     background-color: #8ecc96;
-    font-size: 40px;
+    font-size: 30px;
     padding-top:10px;
     padding-bottom: 0;
 }
@@ -238,4 +239,36 @@ footer{
     text-align: none !important;
     text-shadow: none !important;
     /*color: #000;*/
+}
+
+.map{
+  position: relative;
+}
+
+.send{
+  width: 400px;
+  background-color: #8ecc96;
+  border: 5px solid #286725;
+  padding: 10px;
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  z-index: 100;
+}
+
+.send input,
+.send textarea{
+  width: 100%;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+input[type=submit]{
+  background: #fff;
+  border: 1px solid #286725;
+}
+
+input[type=submit]:hover{
+  background: #286725;
+  color: #fff;
 }

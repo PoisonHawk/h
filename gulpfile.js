@@ -1,14 +1,21 @@
-var gulp = require('gulp'),
-    livereload = require('gulp-livereload'),
-    connect = require('gulp-connect');
+var gulp = require('gulp');
+var imagemin = require('gulp-imagemin');
+var imageResize = require('gulp-image-resize');
 
-    gulp.task('connect', function(){
-      connect.server({
-        liverload:true;
-      })
-    })
+gulp.task('default', function(){
+gulp.src('images/*')
+.pipe(imagemin())
+.pipe(gulp.dest('images'))
+})
 
-    gulp.task('watch', function(){
-    livereload.listen();
-    gulp.watch('css/*.css').on('change', livereload.changed);
-   });
+
+gulp.task('resize', function () {
+gulp.src('images/partners/*')
+.pipe(imageResize({
+  // width : 280,
+  height : 118,
+  // crop : true,
+  upscale : true,
+}))
+.pipe(gulp.dest('images/partners1'));
+});
