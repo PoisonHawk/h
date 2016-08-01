@@ -56,13 +56,15 @@ header h2{
 .nav li a{
     font-size: 24px;
     display:inline-block;
-    color: #fff;
+    color: rgba(0,0,0,0.8);
 }
 
 .nav li a:hover{
     font-size: 24px;
     display:inline-block;
-    color: green;
+    /*color: green;*/
+    background: none !important;
+    text-decoration: underline !important;
 }
 
 header .logo{
