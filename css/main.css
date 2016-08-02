@@ -89,7 +89,7 @@ header .logo{
 .info_2 a{
     color: rgba(0,0,0,0.9);
     text-decoration: none;
-    
+
 }
 
 .slide{
@@ -114,8 +114,32 @@ header .logo{
 }
 
 .partners div{
-    line-height: 100px !important;
-    height: 100px;
+    /*line-height: 100px !important;*/
+    height: 120px;
+}
+
+.partners div.collagene{
+  background: url('../images/partners/collagene.png') no-repeat center center;
+}
+
+.partners div.profcosm{
+  background: url('../images/partners/profcosm.png') no-repeat center center;
+}
+
+.partners div.tmprofi{
+  background: url('../images/partners/tmprofi.png') no-repeat center center;
+}
+
+.partners div.depilflax{
+  background: url('../images/partners/depilflax.gif') no-repeat center center;
+}
+
+.partners div.refectocil{
+  background: url('../images/partners/refectocil.png') no-repeat center center;
+}
+
+.partners div.starpil{
+  background: url('../images/partners/starpil.png') no-repeat center center;
 }
 
 .partners div img{
@@ -206,7 +230,6 @@ header .logo{
 }
 
 .contacts{
-    /*color: rgba(255,255,255,0.9);*/
     background-color: #8ecc96;
     font-size: 30px;
     padding-top:10px;
@@ -234,12 +257,13 @@ footer{
 }
 
 .carousel-caption {
-    background-color: rgba(24, 138, 93, 0.9) !important;
+    background-color: rgba(50, 100, 50, 0.9) !important;
     left: 60% !important;
     right: 10% !important;
     padding: 5px !important;
     text-align: none !important;
     top: 30px !important;
+    position:relative;
 }
 
 .carousel-caption p{
@@ -249,6 +273,19 @@ footer{
     /*color: #000;*/
 }
 
+a.go{
+  margin-top: 70px;
+  color: rgba(255,255,255,0.9);
+  text-shadow: none;
+  display: block;
+}
+
+a.go:hover{
+  color: rgba(255,255,255,0.9);
+  text-shadow: none;
+}
+
+
 .map{
   position: relative;
 }
@@ -256,12 +293,19 @@ footer{
 .send{
   width: 400px;
   background-color: #8ecc96;
-  border: 5px solid #286725;
+  border: 2px solid #286725;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
   padding: 10px;
   position: absolute;
-  top: 50px;
+  top: 65px;
   left: 50px;
   z-index: 100;
+}
+
+.send h3{
+  font-size:36px;
 }
 
 .send input,
@@ -271,9 +315,13 @@ footer{
   padding: 5px;
 }
 
-input[type=submit]{
+input:focus{
+  border: 2px solid #286725;
+}
+
+input[type=submit] {
   background: #fff;
-  border: 1px solid #286725;
+  border: 2px solid #286725;
 }
 
 input[type=submit]:hover{
