@@ -12,7 +12,7 @@ body{
 
   font-size: 32px;
   font-family: 'PT' !important;
-  min-width: 1300px !important;
+  /*min-width: 1300px !important;*/
 }
 
 section{
@@ -254,7 +254,7 @@ footer{
   padding: 10px;
   position: absolute;
   top: 50px;
-  right: 100px;
+  left: 50px;
   z-index: 100;
 }
 
@@ -273,4 +273,22 @@ input[type=submit]{
 input[type=submit]:hover{
   background: #286725;
   color: #fff;
+}
+
+.up{
+  position: fixed;;
+  bottom: 70px;
+  right: 50px;
+  font-size: 70px;
+  font-weight: bold;
+  display: none;
+
+}
+
+.up a{
+  color: rgba(50, 100, 50, 0.5) !important;
+}
+
+.up a:hover{
+  color: rgba(50, 100, 50, 0.7) !important;
 }
