@@ -3,16 +3,24 @@
     src: url(../fonts/2219.ttf); /* Путь к файлу со шрифтом */
    }
 
+@font-face {
+   font-family: Open Sans; /* Имя шрифта */
+   src: url(../fonts/open_sans.ttf); /* Путь к файлу со шрифтом */
+  }
+
 *{
     margin:0;
     padding:0;
 }
 
-body{
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Open Sans' !important;
+}
 
+body{
   font-size: 32px;
   font-family: 'PT' !important;
-  /*min-width: 1300px !important;*/
+  min-width: 960px !important;
 }
 
 section{
@@ -20,21 +28,20 @@ section{
 }
 
 header{
-  background: url('../images/back.jpg') !important;
+  background: url('../images/back_f.jpg') !important;
   background-size: cover !important;
   background-color: #3E3E3E;
   background-position: bottom !important;
   padding: 50px 0 300px 0;
-  /*height: 100% !important;*/
- height: 100vh !important;
- display: table;
+  height: 100vh !important;
+  color: rgba(255,255,255,0.8);
 }
 
 .header-info{
-  /*display:table-cell;*/
   vertical-align: middle;
   width:100% !important;
   text-align: center;
+
 }
 
 header h1{
@@ -49,22 +56,32 @@ header h2{
 }
 
 .nav li {
-    font-size: 18px;
     display:inline-block;
 }
 
 .nav li a{
-    font-size: 24px;
+    font-size: 18px;
+    font-family: 'Open Sans';
     display:inline-block;
-    color: rgba(0,0,0,0.8);
+    color: rgba(255,255,255,0.8);
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .nav li a:hover{
-    font-size: 24px;
     display:inline-block;
-    /*color: green;*/
     background: none !important;
     text-decoration: underline !important;
+}
+
+.nav li a:visited{
+    display:inline-block;
+    background: none !important;
+}
+
+.nav li a:active{
+    display:inline-block;
+    background: none !important;
 }
 
 header .logo{
@@ -73,6 +90,7 @@ header .logo{
   font-style: italic;
   text-transform: uppercase;
   color: green;
+  float:left!important;
 }
 
 .info_1{
@@ -83,13 +101,18 @@ header .logo{
 .info_2{
     margin-top:25px;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 28px;
+    float:right!important;
 }
 
 .info_2 a{
-    color: rgba(0,0,0,0.9);
+    color: rgba(255,255,255,0.8);
     text-decoration: none;
-    
+}
+
+.info_2 a:hover{
+    color: green;
+      text-decoration: none;
 }
 
 .slide{
@@ -97,14 +120,8 @@ header .logo{
     font-size: 26px;
 }
 
-
-
-.services{
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
 .services h3{
+  /*font:bold 21px 'Open Sans';*/
   font-size: 30px;
   text-align: center;
 }
@@ -114,8 +131,32 @@ header .logo{
 }
 
 .partners div{
-    line-height: 100px !important;
-    height: 100px;
+    /*line-height: 100px !important;*/
+    height: 120px;
+}
+
+.partners div.collagene{
+  background: url('../images/partners/collagene.png') no-repeat center center;
+}
+
+.partners div.profcosm{
+  background: url('../images/partners/profcosm.png') no-repeat center center;
+}
+
+.partners div.tmprofi{
+  background: url('../images/partners/tmprofi.png') no-repeat center center;
+}
+
+.partners div.depilflax{
+  background: url('../images/partners/depilflax.gif') no-repeat center center;
+}
+
+.partners div.refectocil{
+  background: url('../images/partners/refectocil.png') no-repeat center center;
+}
+
+.partners div.starpil{
+  background: url('../images/partners/starpil.png') no-repeat center center;
 }
 
 .partners div img{
@@ -193,8 +234,14 @@ header .logo{
 }
 
 .process{
+    background: url('../images/payments.png') no-repeat right;
     font-size: 26px;
     padding-bottom:100px;
+}
+
+.process p{
+  background: rgba(255,255,255,0.7);
+  box-shadow: 0 0 50px 50px rgba(255,255,255,0.7);
 }
 
 .process .icon{
@@ -206,7 +253,6 @@ header .logo{
 }
 
 .contacts{
-    /*color: rgba(255,255,255,0.9);*/
     background-color: #8ecc96;
     font-size: 30px;
     padding-top:10px;
@@ -234,12 +280,13 @@ footer{
 }
 
 .carousel-caption {
-    background-color: rgba(24, 138, 93, 0.9) !important;
+    background-color: rgba(50, 100, 50, 0.9) !important;
     left: 60% !important;
     right: 10% !important;
     padding: 5px !important;
     text-align: none !important;
     top: 30px !important;
+    position:relative;
 }
 
 .carousel-caption p{
@@ -249,6 +296,19 @@ footer{
     /*color: #000;*/
 }
 
+a.go{
+  margin-top: 70px;
+  color: rgba(255,255,255,0.9);
+  text-shadow: none;
+  display: block;
+}
+
+a.go:hover{
+  color: rgba(255,255,255,0.9);
+  text-shadow: none;
+}
+
+
 .map{
   position: relative;
 }
@@ -256,12 +316,19 @@ footer{
 .send{
   width: 400px;
   background-color: #8ecc96;
-  border: 5px solid #286725;
+  border: 2px solid #286725;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
   padding: 10px;
   position: absolute;
-  top: 50px;
+  top: 65px;
   left: 50px;
   z-index: 100;
+}
+
+.send h3{
+  font-size:36px;
 }
 
 .send input,
@@ -271,9 +338,13 @@ footer{
   padding: 5px;
 }
 
-input[type=submit]{
+input:focus{
+  border: 2px solid #286725;
+}
+
+input[type=submit] {
   background: #fff;
-  border: 1px solid #286725;
+  border: 2px solid #286725;
 }
 
 input[type=submit]:hover{
