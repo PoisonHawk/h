@@ -212,17 +212,20 @@ header .logo{
   height: 600px;
 }
 
-.wood{
-    margin-bottom:100px;
+.item-christina{
+  background: url('../images/christina.jpg') !important;
+  background-size: cover !important;
+  background-color: #3E3E3E;
+  height: 600px;
 }
 
-.wood p{
-    font-size:30px;
+.item-tmprofi{
+  background: url('../images/tm.jpg') !important;
+  background-size: cover !important;
+  background-color: #3E3E3E;
+  height: 600px;
 }
 
-.wood h3{
-    font-size: 34px !important;
-}
 
 .whyus{
     background: url('../images/bg2.jpg');
@@ -314,6 +317,14 @@ footer{
     text-shadow: none !important;
 }
 
+.carousel-indicators li {
+  border-color: rgba(50, 100, 50, 0.9)!important;
+}
+
+.carousel-indicators li.active {
+  background-color: rgba(50, 100, 50, 0.9)!important;
+}
+
 a.go{
   margin-top: 70px;
   color: rgba(255,255,255,0.9);
@@ -325,7 +336,6 @@ a.go:hover{
   color: rgba(255,255,255,0.9);
   text-shadow: none;
 }
-
 
 .map{
   position: relative;
