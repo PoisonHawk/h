@@ -151,7 +151,8 @@ header .logo{
 }
 
 .partners div.depilflax{
-  background: url('../images/partners/depilflax.gif') no-repeat center center;
+  background: url('../images/partners/depilflax.png') no-repeat center center;
+  background-size: contain;
 }
 
 .partners div.refectocil{
