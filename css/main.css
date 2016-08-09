@@ -185,7 +185,7 @@ header .logo{
 }
 
 .item-depilflax{
-  background: url('../images/depilflax.jpg') !important;
+  background: url('../images/depilflax1.jpg') !important;
   background-size: cover !important;
   background-color: #3E3E3E;
   height: 600px;
@@ -193,6 +193,13 @@ header .logo{
 
 .item-refectocil{
   background: url('../images/refectocil.jpg') !important;
+  background-size: contain !important;
+  background-color: #3E3E3E;
+  height: 600px;
+}
+
+.item-anna{
+  background: url('../images/anna.jpg') !important;
   background-size: contain !important;
   background-color: #3E3E3E;
   height: 600px;
@@ -267,7 +274,7 @@ header .logo{
 
 .contacts{
     background-color: rgb(50, 102, 10);
-    color: rgba(255,255,255,0.8);
+    color: rgba(255,255,255,0.9);
     font-size: 30px;
     padding-top:10px;
     padding-bottom: 0;
@@ -298,7 +305,6 @@ footer{
     font-size: 18px !important;
     text-align: none !important;
     text-shadow: none !important;
-    /*color: #000;*/
 }
 
 a.go{
@@ -320,7 +326,7 @@ a.go:hover{
 
 .send{
   width: 400px;
-  background-color: #8ecc96;
+  background-color: rgba(50, 100, 50, 0.7) ;
   border: 2px solid #286725;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -349,6 +355,7 @@ input:focus{
 
 input[type=submit] {
   background: #fff;
+  color:#286725;
   border: 2px solid #286725;
 }
 
