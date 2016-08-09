@@ -28,7 +28,7 @@ section{
 }
 
 header{
-  background: url('../images/back_f.jpg') !important;
+  background: url('../images/back.jpg') !important;
   background-size: cover !important;
   background-color: #3E3E3E;
   background-position: bottom !important;
@@ -63,7 +63,7 @@ header h2{
     font-size: 18px;
     font-family: 'Open Sans';
     display:inline-block;
-    color: rgba(255,255,255,0.8);
+    color: rgba(0,0,0,0.8);
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -85,10 +85,11 @@ header h2{
 }
 
 header .logo{
-  font-size: 60px;
+  font-size: 80px;
   font-weight: bold;
   font-style: italic;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
+  line-height: 0.9em;
   color: green;
   float:left!important;
 }
@@ -99,6 +100,7 @@ header .logo{
 }
 
 .info_2{
+    color:  rgba(0,0,0,0.8);
     margin-top:25px;
     text-transform: uppercase;
     font-size: 28px;
@@ -106,17 +108,19 @@ header .logo{
 }
 
 .info_2 a{
-    color: rgba(255,255,255,0.8);
+    color:  rgba(0,0,0,0.8);
     text-decoration: none;
 }
 
 .info_2 a:hover{
-    color: green;
+    color: rgba(0,0,0,0.8);
       text-decoration: none;
 }
 
 .slide{
-    background-color: #8ecc96;
+    /*background-color: #8ecc96;*/
+    background-color: rgb(50, 102, 10);
+    color: rgba(255,255,255,0.8);
     font-size: 26px;
 }
 
