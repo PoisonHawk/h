@@ -118,7 +118,6 @@ header .logo{
 }
 
 .slide{
-    /*background-color: #8ecc96;*/
     background-color: rgb(50, 102, 10);
     color: rgba(255,255,255,0.8);
     font-size: 26px;
@@ -159,8 +158,17 @@ header .logo{
   background: url('../images/partners/refectocil.png') no-repeat center center;
 }
 
+.partners div.christina{
+  background: url('../images/partners/christina.png') no-repeat center center;
+}
+
 .partners div.starpil{
   background: url('../images/partners/starpil.png') no-repeat center center;
+}
+
+.partners div.anna{
+  background: url('../images/partners/anna.png') no-repeat  center center;
+  background-size: cover;
 }
 
 .partners div img{
@@ -257,19 +265,11 @@ header .logo{
 }
 
 .contacts{
-    background-color: #8ecc96;
+    background-color: rgb(50, 102, 10);
+    color: rgba(255,255,255,0.8);
     font-size: 30px;
     padding-top:10px;
     padding-bottom: 0;
-}
-
-.contacts .logo h2{
-    color: #006600;
-    font-family: 'Ruslan';
-    font-size: 46px;
-}
-.contacts .logo h3{
-  font-size: 36px;
 }
 
 .contacts .tel{
@@ -277,7 +277,7 @@ header .logo{
 }
 
 footer{
-    background-color: #286725;
+    background-color:  rgb(50, 102, 10);
     color: rgba(255,255,255,0.8);
     font-size: 20px;
     padding: 20px 0;
