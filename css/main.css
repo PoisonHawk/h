@@ -205,6 +205,13 @@ header .logo{
   height: 600px;
 }
 
+.item-starpil{
+  background: url('../images/starpil.jpg') !important;
+  background-size: cover !important;
+  background-color: #3E3E3E;
+  height: 600px;
+}
+
 .wood{
     margin-bottom:100px;
 }
