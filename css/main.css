@@ -147,6 +147,11 @@ header .logo{
   background: url('../images/partners/profcosm.png') no-repeat center center;
 }
 
+.partners div.mesoline{
+  background: url('../images/partners/mesoline.png') no-repeat center center;
+  background-size: contain;
+}
+
 .partners div.tmprofi{
   background: url('../images/partners/tmprofi.png') no-repeat center center;
 }
