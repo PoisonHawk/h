@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6{
 body{
   font-size: 32px;
   font-family: 'PT' !important;
-  /*min-width: 960px !important;*/
+  min-width: 1100px !important;
 }
 
 section{
@@ -55,31 +55,43 @@ header h2{
   font-size: 60px;
 }
 
-.nav li {
+.top-menu{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.nav-menu{
+  float: left;
+  margin: 24px 64px;
+}
+
+.nav-menu li {
     display:inline-block;
 }
 
-.nav li a{
-    font-size: 16px;
+.nav-menu li a{
+    font-size: 20px;
     font-family: 'Open Sans';
     display:inline-block;
     color: rgba(0,0,0,0.8);
     text-transform: uppercase;
     font-weight: bold;
+    padding: 10px;
+
 }
 
-.nav li a:hover{
+.nav-menu li a:hover{
     display:inline-block;
     background: none !important;
     text-decoration: underline !important;
 }
 
-.nav li a:visited{
+.nav-menu li a:visited{
     display:inline-block;
     background: none !important;
 }
 
-.nav li a:active{
+.nav-menu li a:active{
     display:inline-block;
     background: none !important;
 }
@@ -90,7 +102,8 @@ header .logo{
   font-style: italic;
   /*text-transform: uppercase;*/
   line-height: 0.9em;
-  color: green;
+  /*color: green;*/
+  color: rgb(0,204,0);
   float:left!important;
 }
 
@@ -415,11 +428,4 @@ input[type=submit]:hover{
 
 .up a:hover{
   color: rgba(50, 100, 50, 0.7) !important;
-}
-
-
-@media screen and (max-width: 960px) {
-    header h1 {
-        font-size: 50px;
-    }
 }

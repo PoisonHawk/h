@@ -42,11 +42,11 @@ function onScroll(){
 
 $(document).ready(function(){
 
-  
+
 
   $(document).on("scroll", onScroll);
 
-  $('.up a[href^="#"], .navbar a[href^="#"]').click(function(){
+  $('.up a[href^="#"], .nav-menu a[href^="#"]').click(function(){
 
       var el = $(this).attr('href');
 
