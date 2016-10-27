@@ -56,4 +56,33 @@ $(document).ready(function(){
           return false;
   });
 
+
+   $("#form").submit(function() {
+    //устанавливаем событие отправки для формы с id=form
+            var form_data = $(this).serialize(); //собераем все данные из формы
+
+            $.ajax({
+              type: "POST",
+              url: "process.php", 
+              data: form_data,
+              dataType: 'json',
+              error: function(){
+                  alert('Невозможно отправить сообщение');
+              },
+              success: function(data) {
+
+                  if (data.status === 'success') {
+
+                    alert(data.text);
+                    $('#email').val('');
+                    $('#textarea').val('');
+
+                  } else {
+                    alert(data.text);
+                  }
+              },
+            });
+    });
+
+
 })
