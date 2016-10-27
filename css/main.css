@@ -191,6 +191,8 @@ header .logo{
   background-size: contain;
 }
 
+
+
 .partners div img{
     /*display:table-cell !important;*/
     vertical-align: middle !important;
@@ -240,6 +242,13 @@ header .logo{
 
 .item-tmprofi{
   background: url('../images/tm.jpg') !important;
+  background-size: cover !important;
+  background-color: #3E3E3E;
+  height: 600px;
+}
+
+.item-guam{
+  background: url('../images/guam1.jpg') !important;
   background-size: cover !important;
   background-color: #3E3E3E;
   height: 600px;
