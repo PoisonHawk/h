@@ -254,6 +254,12 @@ header .logo{
   height: 600px;
 }
 
+.item-igro{
+  background: url('../images/igro.jpg') !important;
+  background-size: cover !important;
+  background-color: #3E3E3E;
+  height: 600px;
+}
 
 .whyus{
     background: url('../images/bg2.jpg');
